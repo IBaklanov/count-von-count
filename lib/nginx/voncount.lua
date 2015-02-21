@@ -1,7 +1,7 @@
 local utils = require "utils"
 
 ngx.header["Cache-Control"] = "no-cache"
-local args = ngx.req.get_query_args()
+local args = ngx.req.get_post_args()
 args = utils:normalizeKeys(args)
 args["action"] = ngx.var.action
 
