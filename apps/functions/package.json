@@ -1,0 +1,20 @@
+{
+  "name": "@count-von-count/functions",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@count-von-count/shared": "workspace:*",
+    "@supabase/supabase-js": "^2.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "typescript": "^5.1.0"
+  }
+}
